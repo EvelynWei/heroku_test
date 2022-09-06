@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 导入阿里的图标样式文件 -->
+    <link rel="stylesheet" href="iconfont.css">
+    <link rel="stylesheet" href="index.css">
+
+<style type="text/css">
+	
+	.button_redball {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+	margin: auto 2px;
+    padding: 5px 6px;
+    border: 1px solid #a12727;
+    border-radius: 30px;
+    background: #ff4a4a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4a4a), to(#992727));
+    background: -moz-linear-gradient(top, #ff4a4a, #992727);
+    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    -webkit-box-shadow: #ff5959 0px 0px 0px 0px;
+    -moz-box-shadow: #ff5959 0px 0px 0px 0px;
+    box-shadow: #ff5959 0px 0px 0px 0px;
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal bold 23px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+	.button_yellowball {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+	margin: auto 2px;
+    padding: 5px 6px;
+    border: 1px solid #E5AD57;
+    border-radius: 30px;
+    background: #FEF08A;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FEF08A), to(#E5AD57));
+    background: -moz-linear-gradient(top, #FEF08A, #E5AD57);
+    background: linear-gradient(to bottom, #FEF08A, #E5AD57);
+    -webkit-box-shadow: #ff5959 0px 0px 0px 0px;
+    -moz-box-shadow: #ff5959 0px 0px 0px 0px;
+    box-shadow: #ff5959 0px 0px 0px 0px;
+    text-shadow: #FEF08A 1px 1px 1px;
+    font: normal normal bold 23px arial;
+    color: #2e2e2d;
+    text-decoration: none;
+}	
+	
+	 .ball_table {border: 1px solid black;width:100%;max-width: 700px; border:none;}
+   .ball_table tr:nth-child(even) {background: #e8e8e8}
+   .ball_table tr:nth-child(odd) {background: #FFF}
+	
+div.balls_div{max-width: 320px;margin: 5px auto;align: center;position:relative;/*border:#F00509 3px solid;*/ }
+div.date{position:absolute;color: #303030;left:5px;}
+div.balls_id{text-align:center;color: #002B97;margin-bottom: 5px}
+div.getmoney{position:absolute;color: #C40003;right:5px;top: -2px}
+
+table{font-family:arial;font-size:16pt;max-width: 700px; border-style:solid;border-color:grey;border-width:0px;border-collapse:collapse;}
+th.spacing{padding:5px; letter-spacing: 10px;font-size:24px;text-align:center;background-color:#444;color:#fff;}
+tr,td{text-align:center;}
+/*td{padding-left:14%;height: 50px}position: relative;left:-10px;bottom:7px;*/
+span.sub{vertical-align:super;font-size:14px;color: #B50003;font-style:oblique;}
+a.decoration{text-decoration:underline;text-decoration-color:  #4267B2;letter-spacing: 2px;text-decoration-style:double;}
+a.decoration:hover{color:#5D5D5D}
+a.link:hover{color:#5D5D5D}
+span.sub2{vertical-align:super;font-size:14px;color: #B50003;font-style:oblique;}
+h1.text1{font-size:30px;color: #000000;}
+h2{font-size:25px;}
+p.text2{font-size:20px}
+tr.htitlepink{text-align:center;background-color:#FFB0B2;color:#000;border:2px #FFFFFF solid;border-color:white;font-size:18pt;font-weight: bolder; padding-bottom: 10px;padding:5px;}
+
+@media screen and (max-width:700px)
+{
+table{font-size:16pt;}
+th.spacing{padding:5px; letter-spacing: 5px;font-size:20px;}
+td{padding-left:0%;text-align:center;font-size:18px;height:40px}
+tr.htitlepink>td{text-align:center;background-color:#FFB0B2;color:#000;border:2px #FFFFFF solid;border-color:white;font-size:18pt;font-weight: bolder; padding-bottom: 10px;padding:5px;}
+span.sub{font-size:12px;}
+span.sub2{font-size:12px;}
+h1.text1{font-size:25px}
+p.text2{font-size:18px;text-align:left;padding:2px 5px}
+	}
+	
+
+
+	
+</style>
+
+</head>
+<body>
+    <div class="content">
+        <div class="menu-box" style=" z-index: 2;">
+            <!-- 展示与隐藏侧边栏 开始-->
+            <input type="checkbox" id="menu-btn">
+            <label for="menu-btn"><!--<i class="iconfont icon-yemianfanhui"></i>--><span></span></label>
+            <!-- 展示与隐藏侧边栏 结束-->
+            <div class="menu">
+                <!-- 侧边栏的标题 开始-->
+                <div class="menu-title">
+                    <h1>樂透+</h1>
+                    <img src="https://live.staticflickr.com/65535/51913576423_e6a6e4f2ae_o.png" style="height: 90px; width: 90px">
+                </div>
+                <!-- 侧边栏的标题 结束-->
+
+                <!-- 每一项导航 -->
+                <div class="menu-item">
+                    <input type="checkbox" id="menu-item1">
+                    <label for="menu-item1">
+                        <i class="menu-item-icon iconfont icon-a-01-shujuzhongxin"></i>
+                        <span>navigation1</span>
+                        <i class="menu-item-last iconfont icon-down"></i>
+                    </label>
+                    <div class="menu-content">
+                        <span onclick="window.location.href='http://www.google.com';">option1</span>
+                        <span onclick="window.location.href='https://www.w3schools.com/cssref/pr_gen_content.asp';">option2</span>
+                        <span onclick="window.location.href='https://www.pilio.idv.tw/lto/list.asp';">option3</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="menu-item2">
+                    <label for="menu-item2">
+                        <i class="menu-item-icon iconfont icon-a-02-kechengguanli"></i>
+                        <span>navigation2</span>
+                        <i class="menu-item-last iconfont icon-down"></i>
+                    </label>
+                    <div class="menu-content">
+                        <span>option1</span>
+                        <span>option2</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="menu-item3">
+                    <label for="menu-item3">
+                        <i class="menu-item-icon iconfont icon-a-04-zixunfabu"></i>
+                        <span>navigation3</span>
+                        <i class="menu-item-last iconfont icon-down"></i>
+                    </label>
+                    <div class="menu-content">
+                        <span>option1</span>
+                        <span>option2</span>
+                        <span>option3</span>
+                    </div>
+                </div>
+
+                <div class="set-line"></div>
+
+                <div class="menu-item">
+                    <label>
+                        <i class="menu-item-icon iconfont icon-a-08-shezhi"></i>
+                        <span onclick="window.location.href='https://invoices.com.tw/';">setting</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+
+
+    <div style="position:absolute;top:0px;text-align: center; width: 100% ;height: 100%; background:rgba(255, 87, 51 ,0.25);z-index:1;">
+
+    	<center>	<table class="ball_table">
+<h1 class="text1"><strong>威力彩</strong></h1>
+	
+
+<tr><td><center><div class="balls_div"><div class="date">111/02/07</div><div class="balls_id">111000016</div><div class="getmoney">頭獎:0</div>
+	
+	<span class="button_yellowball">03</span><span class="button_yellowball">05</span><span class="button_yellowball">09</span><span class="button_yellowball">11</span><span class="button_yellowball">38</span><span class="button_yellowball">49</span><span class="button_redball">02</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/02/03</div><div class="balls_id">111000015</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">02</span><span class="button_yellowball">11</span><span class="button_yellowball">13</span><span class="button_yellowball">14</span><span class="button_yellowball">28</span><span class="button_yellowball">29</span><span class="button_redball">07</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/02/01</div><div class="balls_id">111000014</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">06</span><span class="button_yellowball">07</span><span class="button_yellowball">08</span><span class="button_yellowball">15</span><span class="button_yellowball">17</span><span class="button_yellowball">23</span><span class="button_redball">03</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/01/30</div><div class="balls_id">111000013</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">07</span><span class="button_yellowball">13</span><span class="button_yellowball">15</span><span class="button_yellowball">26</span><span class="button_yellowball">33</span><span class="button_yellowball">41</span><span class="button_redball">06</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/01/27</div><div class="balls_id">111000012</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">01</span><span class="button_yellowball">02</span><span class="button_yellowball">12</span><span class="button_yellowball">14</span><span class="button_yellowball">27</span><span class="button_yellowball">35</span><span class="button_redball">05</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/02/07</div><div class="balls_id">111000016</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">03</span><span class="button_yellowball">05</span><span class="button_yellowball">09</span><span class="button_yellowball">11</span><span class="button_yellowball">38</span><span class="button_yellowball">49</span><span class="button_redball">02</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/02/03</div><div class="balls_id">111000015</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">02</span><span class="button_yellowball">11</span><span class="button_yellowball">13</span><span class="button_yellowball">14</span><span class="button_yellowball">28</span><span class="button_yellowball">29</span><span class="button_redball">07</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/2/01</div><div class="balls_id">111000014</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">06</span><span class="button_yellowball">07</span><span class="button_yellowball">08</span><span class="button_yellowball">15</span><span class="button_yellowball">17</span><span class="button_yellowball">23</span><span class="button_redball">03</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/01/30</div><div class="balls_id">111000013</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">07</span><span class="button_yellowball">13</span><span class="button_yellowball">15</span><span class="button_yellowball">26</span><span class="button_yellowball">33</span><span class="button_yellowball">41</span><span class="button_redball">06</span></div></center>
+	</td></tr>
+<tr><td><center><div class="balls_div"><div class="date">111/01/27</div><div class="balls_id">111000012</div><div class="getmoney">頭獎:0</div>
+	<span class="button_yellowball">01</span><span class="button_yellowball">02</span><span class="button_yellowball">12</span><span class="button_yellowball">14</span><span class="button_yellowball">27</span><span class="button_yellowball">35</span><span class="button_redball">05</span></div></center>
+	</td></tr>
+	</table>
+
+
+</center>
+<br />
+
+<br />
+<div class="div"><br />
+
+
+
+
+
+    </div>
+
+</body>
+</html>
